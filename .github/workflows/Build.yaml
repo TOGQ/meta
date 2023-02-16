@@ -27,6 +27,7 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
+      - run: chmod +x ./gradlew
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
