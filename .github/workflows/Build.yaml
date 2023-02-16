@@ -6,7 +6,7 @@ jobs:
   BuildUnsigned:
     runs-on: ubuntu-latest
     steps:
-      - run: chmod +x /home/runner/work/meta/meta/gradlew && ls
+      - run: chmod +x ./gradlew && ls
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
